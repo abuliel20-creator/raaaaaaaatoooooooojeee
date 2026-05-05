@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عيد ميلاد سعيييدد رتووووج 🎉</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- الصفحة الأولى -->
+        <div id="page1" class="page active">
+            <h1>أنتِ ريتاج؟ 💙</h1>
+            <button class="btn" onclick="nextPage()">اكبسي!</button>
+        </div>
+
+        <!-- الصفحة الثانية -->
+        <div id="page2" class="page">
+            <h1>هتحبي المفاجأه؟ 🎂</h1>
+            <div class="options">
+                <button class="option-btn" onclick="showHearts()">يسسسسسسسسس</button>
+                <button class="option-btn" onclick="showHearts()">ااكيييييييد</button>
+                <button class="option-btn" onclick="showHearts()">انطمي وحطي اكيد</button>
+            </div>
+        </div>
+
+        <!-- الصفحة الثالثة - القلوب -->
+        <div id="page3" class="page">
+            <h1>احللللللللللى قلوب لرتوج الكتكوته 💙</h1>
+            <div class="hearts-container" id="heartsContainer"></div>
+            <button class="btn" onclick="nextPage()">كملي كملي! 💙</button>
+        </div>
+
+        <!-- الصفحة الرابعة - Hello Kitty والأغنية -->
+        <div id="page4" class="page">
+            <h1>كل عام وأنتِ بألف خير! 🎀 ياحلوه</h1>
+            <div class="hello-kitty">🎀 Hello Kitty 🎀</div>
+            <p style="font-size: 60px; margin: 20px 0;">😻</p>
+            <audio controls autoplay>
+                <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+            </audio>
+            <p class="message">عيد ميلاد سعيد رتوووووج بتمنالك حياه هنيه وسعيده وتنجحي بتوجيهي يحلوه💙🎉</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
