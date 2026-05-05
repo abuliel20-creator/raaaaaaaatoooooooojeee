@@ -3,43 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>عيد ميلاد سعيييدد رتووووج 🎉</title>
+    <title>عيد ميلاد سعيييييد ريتاجووو🎉</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <!-- الصفحة الأولى -->
-        <div id="page1" class="page active">
-            <h1>أنتِ ريتاج؟ 💙</h1>
-            <button class="btn" onclick="nextPage()">اكبسي!</button>
-        </div>
+    <audio id="backgroundMusic" autoplay loop>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" type="audio/mpeg">
+    </audio>
 
-        <!-- الصفحة الثانية -->
-        <div id="page2" class="page">
-            <h1>هتحبي المفاجأه؟ 🎂</h1>
+    <div class="hearts-bg" id="heartsBg"></div>
+    <div class="kittys-bg" id="kittysBg"></div>
+
+    <!-- الصفحة الأولى -->
+    <div id="page1" class="page active">
+        <div class="container">
+            <h1>أنتِ ريتاج؟ 💙</h1>
+            <p class="click-text">اكبسي اي مكان</p>
+        </div>
+    </div>
+
+    <!-- الصفحة الثانية - الأسئلة -->
+    <div id="page2" class="page">
+        <div class="container">
+            <div class="hello-kitty-icon">😸</div>
+            <h1>هتحبي المفاجأة؟ 💙</h1>
             <div class="options">
-                <button class="option-btn" onclick="showHearts()">يسسسسسسسسس</button>
-                <button class="option-btn" onclick="showHearts()">ااكيييييييد</button>
-                <button class="option-btn" onclick="showHearts()">انطمي وحطي اكيد</button>
+                <button class="option-btn" onclick="answer('yes')">أكييد! ✨</button>
+                <button class="option-btn" onclick="answer('yes2')">يسسسسسس! 🎉</button>
+                <button class="option-btn" onclick="answer('yes3')">انطمي خاوه! 💕</button>
             </div>
         </div>
+    </div>
 
-        <!-- الصفحة الثالثة - القلوب -->
-        <div id="page3" class="page">
-            <h1>احللللللللللى قلوب لرتوج الكتكوته 💙</h1>
-            <div class="hearts-container" id="heartsContainer"></div>
-            <button class="btn" onclick="nextPage()">كملي كملي! 💙</button>
-        </div>
-
-        <!-- الصفحة الرابعة - Hello Kitty والأغنية -->
-        <div id="page4" class="page">
-            <h1>كل عام وأنتِ بألف خير! 🎀 ياحلوه</h1>
-            <div class="hello-kitty">🎀 Hello Kitty 🎀</div>
-            <p style="font-size: 60px; margin: 20px 0;">😻</p>
-            <audio controls autoplay>
-                <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
-            </audio>
-            <p class="message">عيد ميلاد سعيد رتوووووج بتمنالك حياه هنيه وسعيده وتنجحي بتوجيهي يحلوه💙🎉</p>
+    <!-- الصفحة الثالثة - الرسالة -->
+    <div id="page3" class="page">
+        <div class="container">
+            <div class="hello-kitty-icon">😸</div>
+            <h1 class="special-message">ريـتـاج</h1>
+            <p class="love-message">
+                يمكن غريب إني أكتب هيك وإحنا لسه مبارح متعرفين عبعض<br>
+                بس حسّيت لازم أعمل إشي مميز إلك اليوم وقبل الكل وبيوم ميلادك اشي جديد<br><br>
+                كل عام وأنتِ بألف خير 🎂✨<br>
+                وعقبال 100 سنة مليانة فرح وضحك ونجاح<br><br>
+                وبنفس الوقت… بالتوفيق بالتوجيهي<br>
+                إن شاء الله تجيبي أعلى العلامات وتفرحي حالك<br>
+                لأنك بتستاهلي كل الخير والله<br><br>
+                يمكن لسه ما بنعرف بعض كثير،<br>
+                بس يعني مبين انك حدا كيوت ولطيف وحياتو مدري شو بس انه كتكوته والله وفرفوشه<br>
+                وإن شاء الله تكون هالبداية معرفة حلوة<br><br>
+                عيد ميلاد سعيد يا ريتاجووو 💙🎉
+            </p>
         </div>
     </div>
 
